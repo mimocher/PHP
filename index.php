@@ -1,16 +1,4 @@
-<?php
-require_once 'projet_gestion/config/database.php';
-try {
-    $stats = [
-        'developpeurs' => $pdo->query("SELECT COUNT(*) FROM developpeurs")->fetchColumn(),
-        'projets' => $pdo->query("SELECT COUNT(*) FROM projets")->fetchColumn(),
-        'technologies' => $pdo->query("SELECT COUNT(*) FROM technologies")->fetchColumn(),
-        'affectations' => $pdo->query("SELECT COUNT(*) FROM affections")->fetchColumn()
-    ];
-} catch (Exception $e) {
-    die("Erreur: " . $e->getMessage());
-}
-?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
