@@ -13,7 +13,7 @@ if ($_POST) {
 
 <form method="POST">
     <p>
-        <label>Nom *</label><br>
+        <label>Nom </label><br>
         <input type="text" name="nom" required>
     </p>
     
